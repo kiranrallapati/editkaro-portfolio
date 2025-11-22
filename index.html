@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Editkaro.in – Video Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Optional icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-1LQ5fPZWxUe/G7oW2e9BK1uRrXq9wFHE9xS6lWZbJ6zWEPQXlqv8OeT4y1GqF6VnF8YQ0M5z0lGqZs5aXY3V3Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">Edit<span>karo</span>.in</div>
+      <nav class="nav">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Work</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <p class="badge">VaultofCodes x Editkaro.in</p>
+        <h1>
+          Interactive Portfolio for
+          <span>Editkaro.in</span>
+        </h1>
+        <p class="hero-subtitle">
+          Social media marketing &amp; video editing agency specialising in
+          short-form reels, long-form stories, gaming highlights, anime edits,
+          eCommerce ads, and more.
+        </p>
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn primary">View Our Work</a>
+          <a href="#contact" class="btn ghost">Book a Project</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <h3>250+</h3>
+            <p>Videos Delivered</p>
+          </div>
+          <div>
+            <h3>30M+</h3>
+            <p>Views Generated</p>
+          </div>
+          <div>
+            <h3>5+</h3>
+            <p>Years Experience</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-preview">
+        <div class="preview-card">
+          <div class="preview-video shimmer">
+            <i class="fas fa-play"></i>
+          </div>
+          <p class="preview-label">Dynamic edits for brands, creators &amp; gamers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container about-grid">
+      <div>
+        <h2>We turn raw footage into scroll-stopping stories.</h2>
+        <p>
+          Editkaro.in is a video editing &amp; social media marketing studio.
+          We specialise in short-form vertical content, cinematic long-form
+          videos, gaming montages, football edits, anime AMVs, eCommerce and
+          performance ads. Our workflow is built for creators, brands, and
+          agencies that need consistent, on-brand content.
+        </p>
+      </div>
+      <div class="about-points">
+        <div class="about-item">
+          <span class="dot"></span>
+          <p><strong>Strategy first:</strong> We edit for watch time, retention, and clicks, not just aesthetics.</p>
+        </div>
+        <div class="about-item">
+          <span class="dot"></span>
+          <p><strong>Platform ready:</strong> Content optimised for Instagram, YouTube, TikTok, and ads managers.</p>
+        </div>
+        <div class="about-item">
+          <span class="dot"></span>
+          <p><strong>Fast delivery:</strong> Clear feedback cycles, project dashboards, and on-time delivery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">What We Do</h2>
+      <p class="section-subtitle">
+        Full-stack post-production support for modern brands and creators.
+      </p>
+      <div class="services-grid">
+        <article class="service-card">
+          <h3>Short-Form Reels &amp; Shorts</h3>
+          <p>High-energy vertical edits, captions, sound design, and hooks that keep viewers watching.</p>
+        </article>
+        <article class="service-card">
+          <h3>Long-Form Storytelling</h3>
+          <p>Vlogs, podcasts, documentaries, and cinematic narratives with clean pacing and transitions.</p>
+        </article>
+        <article class="service-card">
+          <h3>Gaming &amp; Anime Edits</h3>
+          <p>Sync-heavy highlights, montages, and AMVs aligned tightly to beats, SFX, and trends.</p>
+        </article>
+        <article class="service-card">
+          <h3>Ad &amp; Brand Films</h3>
+          <p>eCommerce product videos, performance ads, and UGC-style edits optimised for conversion.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2 class="section-title">Featured Work</h2>
+      <p class="section-subtitle">
+        Explore our edits by category. Click any thumbnail to preview the video.
+      </p>
+
+      <!-- FILTERS -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="short">Short-Form</button>
+        <button class="filter-btn" data-filter="long">Long-Form</button>
+        <button class="filter-btn" data-filter="gaming">Gaming</button>
+        <button class="filter-btn" data-filter="football">Football</button>
+        <button class="filter-btn" data-filter="anime">Anime</button>
+        <button class="filter-btn" data-filter="ads">Ads / eCom</button>
+        <button class="filter-btn" data-filter="doc">Documentary / Others</button>
+      </div>
+
+      <!-- GRID -->
+      <div class="video-grid">
+        <!-- Short form -->
+        <article
+          class="video-card"
+          data-category="short"
+          data-video="https://www.youtube.com/embed/5O0YDHIosD0"
+        >
+          <div class="thumb shimmer">
+            <span class="tag">Short-Form</span>
+            <i class="fas fa-play play-icon"></i>
+          </div>
+          <h3>15s Trend Reel for Fashion Brand</h3>
+          <p>Fast cuts, captions, and transitions designed for IG Reels.</p>
+        </article>
+
+        <article
+          class="video-card"
+          data-category="short"
+          data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        >
+          <div class="thumb shimmer">
+            <span class="tag">Short-Form</span>
+            <i class="fas fa-play play-icon"></i>
+          </div>
+          <h3>Hook-Driven TikTok Edit</h3>
+          <p>Optimised for 3-second retention and high replay rate.</p>
+        </article>
+
+        <!-- Long form -->
+        <article
+          class="video-card"
+          data-category="long"
+          data-video="https://www.youtube.com/embed/ysz5QJojYxk"
+        >
+          <div class="thumb shimmer">
+            <span class="tag">Long-Form</span>
+            <i class="fas fa-play play-icon"></i>
+          </div>
+          <h3>Creator Vlog Episode</h3>
+          <p>Cinematic pacing with B-roll, sound design, and captions.</p>
+        </article>
+
+        <article
+          class="video-card"
+          data-category="long"
+          data-video="https://www.youtube.com/embed/w7ejDZ8SWv8"
+        >
+          <div class="thumb shimmer">
+            <span class="tag">Long-Form</span>
+            <i class="fas fa-play play-icon"></i>
+          </div>
+          <h3>Podcast Highlight Cutdown</h3>
+          <p>Clean multicam edits and punchy lower-thirds.</p>
+        </article>
+
+        <!-- Gaming -->
+        <article
+          class="video-card"
+          data-category="gaming"
+          data-video="https://www.youtube.com/embed/ktvTqknDobU"
+        >
+          <div class="thumb shimmer">
+            <span class="tag">Gaming</span>
+            <i class="fas fa-play play-icon"></i>
+          </div>
+          <h3>FPS Montage</h3>
+          <p>Beat-synced highlights with cinematic color grading.</p>
+        </article>
+
+        <article
+          class="video-card"
+          data-category="gaming"
+          data-video="https://www.youtube.com/embed/jfKfPfyJRdk"
+        >
+          <div class="thumb shimmer">
+            <span class="tag">Gaming</span>
+            <i class="fas fa-play play-icon"></i>
+          </div>
+          <h3>Streamer Highlight Reel</h3>
+          <p>Memes, zooms, and chat pop-ups for engagement.</p>
+        </article>
+
+        <!-- Football -->
+        <article
+          class="video-card"
+          data-category="football"
+          data-video="https://www.youtube.com/embed/2Vv-BfVoq4g"
+        >
+          <div class="thumb shimmer">
+            <span class="tag">Football</span>
+            <i class="fas fa-play play-icon"></i>
+          </div>
+          <h3>Matchday Hype Edit</h3>
+          <p>Dynamic highlight recap with stadium SFX and crowd roars.</p>
+        </article>
+
+        <!-- Anime -->
+        <article
+          class="video-card"
+          data-category="anime"
+          data-video="https://www.youtube.com/embed/fLexgOxsZu0"
+        >
+          <div class="thumb shimmer">
+            <span class="tag">Anime</span>
+            <i class="fas fa-play play-icon"></i>
+          </div>
+          <h3>Anime AMV</h3>
+          <p>Beat-perfect sync, speed ramps, and motion typography.</p>
+        </article>
+
+        <!-- Ads / eCommerce -->
+        <article
+          class="video-card"
+          data-category="ads"
+          data-video="https://www.youtube.com/embed/LXb3EKWsInQ"
+        >
+          <div class="thumb shimmer">
+            <span class="tag">Ads / eCom</span>
+            <i class="fas fa-play play-icon"></i>
+          </div>
+          <h3>eCommerce Product Ad</h3>
+          <p>Snappy showcase with CTA overlays for conversion.</p>
+        </article>
+
+        <article
+          class="video-card"
+          data-category="ads"
+          data-video="https://www.youtube.com/embed/ZVv2vP4D298"
+        >
+          <div class="thumb shimmer">
+            <span class="tag">Ads / eCom</span>
+            <i class="fas fa-play play-icon"></i>
+          </div>
+          <h3>UGC-Style Performance Ad</h3>
+          <p>Native, authentic style optimised for paid social.</p>
+        </article>
+
+        <!-- Documentary / others -->
+        <article
+          class="video-card"
+          data-category="doc"
+          data-video="https://www.youtube.com/embed/ScMzIvxBSi4"
+        >
+          <div class="thumb shimmer">
+            <span class="tag">Documentary</span>
+            <i class="fas fa-play play-icon"></i>
+          </div>
+          <h3>Mini Documentary</h3>
+          <p>Story-driven edit with narrative VO and B-roll.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL / CTA -->
+  <section class="cta">
+    <div class="container cta-inner">
+      <h2>Ready to level up your content?</h2>
+      <p>
+        Send us your raw footage or brief – we’ll respond with concepts,
+        timelines, and transparent pricing within 24 hours.
+      </p>
+      <a href="#contact" class="btn primary">Start a Project</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container contact-grid">
+      <div>
+        <h2 class="section-title">Let’s Work Together</h2>
+        <p class="section-subtitle">
+          Share a few details about your brand, channel, or campaign and we’ll
+          get back with next steps.
+        </p>
+        <ul class="contact-info">
+          <li><i class="fas fa-envelope"></i> hello@editkaro.in</li>
+          <li><i class="fas fa-phone"></i> +91-98765-43210</li>
+          <li>
+            <i class="fab fa-instagram"></i> @editkaro.in
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form">
+        <div class="field-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your name" required />
+        </div>
+        <div class="field-group">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="your@email.com"
+            required
+          />
+        </div>
+        <div class="field-group">
+          <label for="project">Project Type</label>
+          <select id="project">
+            <option>Short-Form Reels / Shorts</option>
+            <option>Long-Form Video</option>
+            <option>Gaming / Anime Edits</option>
+            <option>Ads / eCommerce</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label for="message">Project Details</label>
+          <textarea
+            id="message"
+            rows="4"
+            placeholder="Share links to footage, references or goals..."
+          ></textarea>
+        </div>
+        <button type="submit" class="btn primary full">
+          Submit Brief
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Editkaro.in. All rights reserved.</p>
+      <p class="small">
+        Mini Project – Portfolio page built for VaultofCodes challenge.
+      </p>
+    </div>
+  </footer>
+
+  <!-- VIDEO MODAL -->
+  <div class="video-modal" id="videoModal">
+    <div class="video-modal-backdrop" data-close></div>
+    <div class="video-modal-content">
+      <button class="modal-close" data-close aria-label="Close video">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="video-wrapper">
+        <iframe
+          id="videoFrame"
+          src=""
+          title="Video preview"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
